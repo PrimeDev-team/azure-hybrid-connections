@@ -1,3 +1,8 @@
+---
+title: How Azure Hybrid Connection Works
+layout: template
+filename: index
+--- 
 # Azure Hybrid Connection Tutorial
 
 ## How Azure Hybrid Connection Works
