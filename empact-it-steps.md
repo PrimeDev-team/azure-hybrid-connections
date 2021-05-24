@@ -1,5 +1,5 @@
 ---
-title: Empact It Steps
+title: Empactit Steps
 layout: template
 filename: empact-it-steps
 --- 
