@@ -6,22 +6,36 @@ filename: on-site-steps
 
 ## On Site / Premises
 
-### Install Node JS
+## Install Node JS
+- Download and install Node JS using the link provided
 [Download Link](https://nodejs.org/dist/v14.17.1/node-v14.17.1-x64.msi)
 
-## Install Project Dependencies
+- Start CMD with administrator privileges.
+- Globally installed PM2:
+
+```bash
+npm install -g yarn
+```
+
+## Install MxB TV Dependencies
+
+- Go to the parent folder of the MxB TV project.
+- Start CMD with administrator privileges.
+- Then run the command below to install the project dependencies.
+
 ```bash
 yarn
 ```
 
 ## Install PM2
-Start CMD with an administrator, globally installed PM2:
+- Start CMD with administrator privileges.
+- Globally installed PM2:
 
 ```bash
  npm i pm2 -g
 ```
 
-Then set up PM2 boot from start:
+Then set up PM2 to boot from start:
 
 - Install and configure:
 
@@ -36,7 +50,7 @@ Then set up PM2 boot from start:
   pm2-service-install
   ```
 
-- NPM Start Start Site New CMD, enter the corresponding application directory:
+- To start the MxB TV server run the following command in the CMD with administrator privileges, enter the corresponding application directory:
 
   ```bash
   pm2 start npm --name "You have to get the name" - run start
@@ -46,9 +60,9 @@ Then set up PM2 boot from start:
 
 ## Setup IIS
 
-- Open IIS -> Selected Server Name -> Double-click the Application Request Routing Cache -> clicking on the right function view IIS node -> Click on the server proxy settings -> check box in the ENABLE PROXY
+- Open IIS -> Selected Server Name -> Double-click the Application Request Routing Cache -> clicking on the right function view IIS node -> Click on the server proxy settings -> check box in the *ENABLE PROXY*
 
-- Add a website test, directory Select the MxB TV project folder, configure the project domain name
+- Add MxB TV, directory Select the MxB TV project folder, configure the project domain name
 
 - Then check the Test website, select the URL rewrite, add a rule
 
