@@ -4,7 +4,9 @@ layout: template
 filename: on-site-steps
 ---
 
-## On Site / Premises
+# On Site / Premises
+
+---
 
 ## Install Node JS
 - Download and install Node JS using the link provided
